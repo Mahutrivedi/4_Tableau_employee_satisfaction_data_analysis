@@ -1,5 +1,6 @@
 1.Understand individual columns of the dataset:
 There are total of 35 columns. 
+
       A.Employee name: (Nominal Categorical) Includes first and last name separated by comma
       B.Employee_id: (Numeric categorical) Includes id only. 9-to-10-digit numeric data
       C.Married_id: (Categorical) 0 and 1
@@ -38,6 +39,7 @@ There are total of 35 columns.
 
 
 2.Understand the dataset 
+
       •	The dataset is of various 310 employees. 
       •	Many parameters related to them like date of birth, performance, recruitment source and employee satisfaction are recorded.
 
@@ -57,6 +59,7 @@ There are total of 35 columns.
 5.Filters: Gender, department, Marital status, Recruitment source, Performance score, Employee satisfaction (This can also be set as action in tableau)
 
 6.Steps for project are: 
+
       •	Clean the date column for date of birth, date of hire and last performance review
       •	Create drilldown table in tableau
       •	Create graphs in tableau and add caption in each worksheet for findings.
