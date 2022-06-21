@@ -1,0 +1,65 @@
+1.	Understand individual columns of the dataset:
+	    There are total of 35 columns. 
+      A.	Employee name: (Nominal Categorical) Includes first and last name separated by comma
+      B.	Employee_id: (Numeric categorical) Includes id only. 9-to-10-digit numeric data
+      C.	Married_id: (Categorical) 0 and 1
+      D.	Marrital_status_id: (Nominal Categorical) 0,1,2,3,4
+      E.	Gender_id: (Categorical) 0 and 1
+      F.	Emp_status_id: (Categorical) 1,2,3,4,5
+      G.	Dept_id: (Categorical) 1,2,3,4,5,6
+      H.	Perf_score_id: (Ordinal Categorical) 1,2,3,4
+      I.	From diversity job fair: (Categorical) 0 and 1
+      J.	Pay rate: (Numerical continuous) range:14 to 80 
+      K.	Termd: (Categorical) 0 and 1
+      L.	Position: (Numeric  Categorical) 1 to 30
+      M.	Position: (Categorical): just as numeric categorical but with position names like “It support”, ”Area sales manage” etc. , Total 30 positions
+      N.	State: (Categorical): Short form of state names
+      O.	Zip: (Numeric categorical)
+      P.	DOB: Date of birth (Date): 1951 to 1992 ( combined mm/dd/yyyy, mm-dd-yyyy and dd/mm/yyyy format): This column needs some data engineering. As we are looking at date of birth the year can be extracted for getting importance of this column
+      Q.	Sex: (Categorical): M and F
+      R.	Marital description: ( Categorical ) Divorced/ Married/Separated/Single/Widowed
+      S.	Citizen description: (Categorical) Eligible Noncitizen, US citizen, Non citizen
+      T.	Hispaniclatino: (Categorical) : Yes and No
+      U.	Race description: (Categorical): American Indian or Alaska native/ Asian/ Black or african American/ Hispanic/ Two or more races/ White
+      V.	Date of hire: (Date): 2006 to 2017, same data engineering is also required in this column also as date of birth column
+      W.	Date of termination: (Date): 2011 to 2016, same data engineering is also required in this column also as date of birth column
+      X.	Term reason: (Categorical): Another position, Attendance,Career change, gross misconduct, hours, maternity leave-did not return, medical issue, military, more money, N/A not started yet, N/A still employed, no-call no-show, performance, Relocation out of area, retiring, Return to school, unhappy: There is one blank entry in this column: Looks like this is the column containing reason for job change.
+      Y.	Employment status: (Categorical): Active, Future start, Leave of absence, Terminated for cause, Voluntarily terminated
+      Z.	Department: (Categorical): Admin office, executive office, IT/IS, production, sales, software engineering
+      AA.	Manager name (Categorical): First and last name separated by space
+      BB.	Manager_id: (Numeric categorical): 1 to 39 some numbers are not present, There is blank for manager id when manager name is “Webster butler”
+      CC.	Recruitment_source: (Categorical): Billboard, indeed and many more
+      DD.	Performance_score: (Categorical): Same as numeric categories but here its in words: Exceeds/Fully meets/Needs improvement/PIP(performance improvement plan)
+      EE.	Engagement survey: (Continuous numeric): 1.03 to 5
+      FF.	Employee satisfaction: (Numeric Categorical): 1,2,3,4,5.
+      GG.	Special project counts: (Discrete numeric): 0,2,3,4,5,6,7,8 (No 1 is not included)
+      HH.	Last performance review date: (Date): 2019  and many blanks
+      II.	Days late last 30: (Categorical): 0 and blanks (I think there are many blanks here because less people understood this field while filling this form)
+
+
+2.	Understand the dataset 
+      •	The dataset is of various 310 employees. 
+      •	Many parameters related to them like date of birth, performance, recruitment source and employee satisfaction are recorded.
+
+3.	The end goal here is to identify employee satisfaction based on other parameters. Also we can find many insights like Performance score based on recruitment source so that we can find suitable employee
+
+4.	What insights can be brought out:
+
+      1)	Performance score based on recruitment source
+      2)	Satisfaction score vs recruitment source
+      3)	Satisfaction score vs Department
+      4)	Pay rate Vs Department, performance score
+      5)	Average pay rate and gender
+      6)	Performance score and marital status 
+      Many more….
+
+
+5.	Filters: Gender, department, Marital status, Recruitment source, Performance score, Employee satisfaction (This can also be set as action in tableau)
+
+6.	Steps for project are: 
+      •	Clean the date column for date of birth, date of hire and last performance review
+      •	Create drilldown table in tableau
+      •	Create graphs in tableau and add caption in each worksheet for findings.
+      •	Create dashboard and add instructions.
+      •	Create a story out of all suitable dashboards
+
